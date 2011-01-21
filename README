@@ -1,3 +1,7 @@
+SimpleVM is a branch of TinyVM, where the main goal is simple, readable code,
+that's well documented. SimpleVM is meant to serve as an example of how a virtual 
+machine works, and how one is written.
+
 Building can be accomplished on UNIX-like systems with make and GCC.
 
 There are no external dependencies, save the C standard library.
