@@ -8,7 +8,7 @@ OBJECTS = hash_table.o tinyvm.o memory.o program.o stack.o virtual_machine.o
 DEBUG = no
 PROFILE = no
 
-BIN_NAME = tinyvm
+BIN_NAME = simplevm
 
 ifeq ($(DEBUG), yes)
 	CXXFLAGS += -g
