@@ -30,11 +30,14 @@ void destroy_vm(virtual_machine* vm)
 
 void run_vm(virtual_machine* vm)
 {
+	// Set out instruction index (equivalent to an instruction pointer) to the starting point of our program
 	int instr_idx = vm->pProgram->start;
 
 	for(;vm->pProgram->instr[instr_idx] != END; ++instr_idx)
 	{
 		int *arg0 = vm->pProgram->args[instr_idx][0], *arg1 = vm->pProgram->args[instr_idx][1];
+
+		// This will be compiled into a jump table
 		switch(vm->pProgram->instr[instr_idx])
 		{
 		case MOV:

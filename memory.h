@@ -5,7 +5,8 @@
 
 typedef struct
 {
-	// FLAGS
+	/* These integers serve as boolean values, equivalent to certain bits
+	set in the FLAGS register of an x86 machine */
 	int equal;
 	int greater;
 

@@ -1,6 +1,12 @@
 #ifndef STACK_H_
 #define STACK_H_
 
+/* This object is a last in, first out (LIFO) data structure known as a stack.
+It consists of an array of objects (32-bit integers, in this case) which are manipulated
+using push and pop instructions. Push adds an item to the top of the stack, and pop removes
+an item from the top of the stack. Operations are always done on the top of the stack.
+No members of the stack below the top are accessible before removing the items above it.*/
+
 typedef struct
 {
 	int* items;
