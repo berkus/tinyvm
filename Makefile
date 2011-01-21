@@ -28,7 +28,7 @@ tinyvm: $(OBJECTS)
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -f $(BIN_NAME) gmon.out *.save *.o
+	rm -f $(BIN_NAME) $(BIN_NAME)-debug gmon.out *.save *.o
 
 rebuild: clean tinyvm
 
